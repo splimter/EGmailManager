@@ -1,0 +1,123 @@
+/* @font-face {
+  font-family: RobotoNote;
+  src: url(fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: RobotoNoteI;
+  src: url(fonts/Roboto-ThinItalic.ttf);
+}
+@font-face {
+  font-family: RobotoP;
+  src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: RobotoH3;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: RobotoH2;
+  src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoH1;
+  src: url(fonts/Roboto-Black.ttf);
+} */
+
+/* h1 {
+  font-family: RobotoH1;
+}
+h2 {
+  font-family: RobotoH2;
+}
+h3 {
+  font-family: RobotoH3;
+}
+p {
+  font-family: RobotoP;
+}
+.note {
+  font-family: RobotoNote !important;
+}
+.noteItalic {
+  font-family: RobotoNoteI !important;
+} */
+
+.container {
+  display: flex;
+  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.rootBGC {
+  min-height: 80vh;
+  background-color: rgb(241, 241, 241);
+}
+
+.side-bar {
+  background-color: #f3f3f3;
+}
+
+.body-mail {
+  background-color: rgb(224, 224, 224);
+}
+
+li.sidebar-menu-items{
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+li:hover {
+  background-color: rgb(220, 220, 220) !important;
+}
+
+/* BEGIN SCROLLBAR */
+.scrollbar
+{
+	/* margin-left: 30px; */
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+
+#mail-body-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#mail-body-container::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#mail-body-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #D62929;
+}
+
+/* END SCROLLBAR */

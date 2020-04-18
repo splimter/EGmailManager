@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="./assets/js/googleBootstrap.js" type="text/javascript"></script>
+  </head>
+  <body class="rootBGC container">
+    <div class="">
+      <div>
+        <h1>Welcome to Gmail Manager</h1>
+        <h3>A window will popup to login</h3>
+
+        <input id="code" type="text" placeholder="Code..." />
+        <button
+          onclick="setNewToken(document.getElementById('code').value)"
+        >
+          Check
+        </button>
+        <button onclick="reSend()">open it</button>
+        <br>
+        <p id="chk-code-status"></p>
+      </div>
+    </div>
+  </body>
+</html>

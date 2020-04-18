@@ -1,0 +1,66 @@
+{
+  "name": "google-mail-manager",
+  "productName": "google mail manager",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "debug": "electron --inspect=5858 src/index.js",
+    "watch": "nodemon --exec electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Merah Soheyb",
+    "email": "soheybemir@hotmail.fr"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "google_mail_manager"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "electron-context-menu": "^0.16.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "googleapis": "^48.0.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.45",
+    "@electron-forge/maker-deb": "6.0.0-beta.45",
+    "@electron-forge/maker-rpm": "6.0.0-beta.45",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.45",
+    "@electron-forge/maker-zip": "6.0.0-beta.45",
+    "electron": "6.0.12",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2"
+  }
+}

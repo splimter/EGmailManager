@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./assets/js/home.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/materialize.min.css" />
+    <link rel="stylesheet" href="assets/css/Material-Icons.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <style>
+      body {
+        overflow-y: hidden;
+      }
+    </style>
+    <script src="./assets/js/materialize.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript" src="./assets/js/jquery.min.js"></script> -->
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="container" style="height: 0px;">
+        <h3 id="status-text"></h3>
+        <!-- BEGIN LOADER -->
+        <!-- <div id="top-loader" class="progress-bar">
+          <div id="sub-top-loader" class="bar"></div>
+        </div> -->
+        <!-- END LOADER -->
+        <ul id="main-page" class="pagination"></ul>
+      </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 0px !important;">
+      <div class="col s2 side-bar" style="padding: 0 !important;">
+        <div style="height: 88vh; display: flex;">
+          <div class="col" style="width: 100%;">
+            <!-- BEGIN SIDEBAR ITEMS -->
+            <ul
+              id="item-list"
+              class="collection"
+              style="width: 100%; height: fit-content;"
+            ></ul>
+            <!-- END SIDEBAR ITEMS -->
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col s10 body-mail"
+        style="padding-left: 0px; padding-right: 0px;"
+      >
+        <div
+          id="loader-container"
+          style="
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <!-- BEGIN LOADER -->
+          <div id="body-loader" class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <!-- END LOADER -->
+          <!-- BEGIN MAILBODY -->
+          <div
+            id="mail-body-container"
+            class="scrollbar"
+            style="display: none; width: 100%; height: 88vh;"
+          >
+            <div id="mail-body" style="width: 100%;">
+              <ul id="mail-body-ul" class="collection"></ul>
+            </div>
+          </div>
+          <!-- END MAILBODY -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
